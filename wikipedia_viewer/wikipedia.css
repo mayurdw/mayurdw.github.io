@@ -1,0 +1,19 @@
+body {
+  background-color: #e2af29;
+  margin: 2%;
+}
+
+.card {
+  background-color: #DAF7A6;
+  margin: 2%;
+  padding: 2%;
+}
+
+.leftColumn {
+  font-size: 24px;
+  font-style: bold;
+}
+.rightColumn {
+  padding: 2%;
+  font-size: 15px;
+}

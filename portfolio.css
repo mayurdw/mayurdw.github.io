@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster|Open+Sans|PT+Sans+Caption|Varela+Round');
+
+nav{
+ font-size: 1.5em;
+ padding-left: 20px;
+ padding-right: 20px;
+ font-family: lobster;
+ font-weight: bold;
+}
+
+#info{
+ font-family: Varela Round;
+ background-color: #C63D0F;
+ color: white;
+ font-size: 1.5em;
+}
+
+#skills{
+ font-family: Open Sans;
+ font-size: 1.5em;
+ font-weight: bolder;
+ color: pink;
+ background-color: #558C89;
+}
+
+#projects{
+ color: #C63D0F;
+ background-color: #C1E1A6;
+ font-size: 1.5em;
+ font-family: PT Sans Caption;
+}
+body {
+ background-color: #EEE;
+}
+
+header{
+ font-family: lobster;
+ font-size: 2.0em;
+ color: #222;
+ padding: 5%;
+}
+#social{
+ color: #558C89;
+ font-size: 1.5em;
+ font-family: Open Sans;
+ background-color: pink;
+}
+section {
+ padding: 5%;
+ width: auto;
+ display: table;
+ width: 90%;
+ margin-left: 60px;
+ background-color: #222;
+ height: 100vh;
+ }
+footer{
+ font-size: 1.2em;
+ font-family: lobster;
+}
