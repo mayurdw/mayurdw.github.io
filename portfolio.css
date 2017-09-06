@@ -1,27 +1,66 @@
+/*
+    Created By: Mayur D Wadhwani
+    License: MIT
+*/
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Bree+Serif|Ubuntu');
 nav {
     font-size: 1.5em;
     padding-left: 20px;
     padding-right: 20px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-weight: bold;
+    font-family: 'Montserrat', sans-serif;
 }
 
 body {
-    background-color: #AAA;
-}
-
-#TogglingArea {
-    background-color: #Df2;
-    margin: 0;
-    padding: 2em;
-}
-
-#sidebar {
-    background-color: #2F3;
-    margin: 0;
-    padding: 2em;
+    background: #d0d6bd;
 }
 
 #title {
-    margin-top: 5pc;
+    font-family: 'Ubuntu', sans-serif;
+    margin-top: 3em;
+    font-size: 2em;
+    text-align: center;
+    padding-bottom: 20px;
+    border-bottom: 2px dashed #216555;
+}
+
+h4 {
+    font-family: 'Bree Serif', serif;
+    padding-bottom: 15px;
+    color: #d0d6bd;
+}
+
+h3 {
+    margin-top: 0;
+    font-family: 'Bree Serif', serif;
+    border-bottom: 1.5px dashed #3b3737;
+    text-align: center;
+}
+
+img {
+    border: 1px solid #d0d6bd;
+}
+
+p {
+    font-family: 'Bree Serif', serif;
+    font-size: 1.25em;
+}
+
+ol {
+    font-family: 'Bree Serif', serif;
+    font-size: 1.25em;
+}
+
+#TogglingArea {
+    margin-top: 5px;
+    padding-left: 1.5em;
+    color: #3b3737;
+}
+
+#sidebar {
+    margin-top: 5;
+    padding: 2em;
+    background-color: #3b3737;
+    border-radius: 25px;
 }

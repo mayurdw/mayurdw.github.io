@@ -1,3 +1,7 @@
+<!-- 
+    Created By: Mayur D Wadhwani
+    License: MIT
+-->
 <html>
 
 <head>
@@ -6,13 +10,11 @@
     </title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" href="portfolio.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js" type="text/javascript"></script>
-    <script src="main.js" type="text/javascript"></script>
 </head>
 
 <body>
     <!-- The Nav Bar Section -->
-    <nav class="navbar navbar-default navbar-fixed-top">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
         <a class="navbar-brand" href="#"> Home </a>
         <ul class="nav navbar-nav navbar-right">
             <li><a href="#about" onclick="AboutDisplay()"> Info  </a></li>
@@ -26,36 +28,60 @@
         <!-- The Info Bar Section -->
         <div class="row">
             <div class="col-xs-4" id="sidebar">
+                <h4> Photo taken during AUT Edge Award 2016 presentation </h4>
                 <center><img src="./resources/Profile.jpeg" class="img-responsive img-circle">
                 </center>
             </div>
             <div class="col-xs-8" id="TogglingArea">
-                <div id="aboutMe">About Me
-                    <p>Mayur currently lives in Auckland, New Zealand. He is born and raised in Mumbai, India. He recently graduated from Auckland University of Technology with a Master of Engineering with Honors degree. He enjoys programming, electronics,
-                        cycling and is always on the lookout for great opportunities.</p>
+                <div id="aboutMe">
+                    <h3>About Me</h3>
+                    <p>I am a Master of Engineering Graduate from Auckland University of Technology, New Zealand.</p>
+                    <p>I am currently living in Auckland and developing software for ATMs and EFTPOS pinpad. </p>
+                    <p> Other than my work, I am usually dabbling in multiple hobbies. I have a personal blog, I write stories and I enjoy taking scenic photos from my phone camera.</p>
+                    <p>I also enjoy live music, volunteering and meeting people who have hobbies.
+                    </p>
+                    <p>The very best thing about me is that I am never afraid to go for something that I wanna do, even if I end up doing it alone. </p>
+                    <p> My penchant is for simplistic look and feel and thus the portfolio looks so simple</p>
 
                 </div>
                 <div id="Projects" style="display: none;">
-
-                    Carotid Pulse Sensor for Master's project. IBTec, AUT. Worked with Arduino and Labview to measure arterial blood pressure Used HTML and Javascript to create a simple second's countdown GovHack 2017: Industrial Diversity Weather App Random Quote Generator
-                    Wikipedia Viewer
+                    <h3> GovHack 2017: </h3>
+                    <p>
+                        <a href="https://www.fcnz.github.io" target="blank">New Zealand Industrial Diversity</a>: We tried to show which districts are highly depended on a particular industry.
+                    </p>
+                    <h3> Impact NPO Charity Hackathon 2017: </h3>
+                    <p>
+                        <a href="https://www.fcnz.github.io" target="blank">Betterment</a>: We worked to create a Wordpress website complete with a payment processor and user directory.
+                    </p>
+                    <h3> Nylas-mail Lives </h3>
+                    <p> An Open Source email client which is no longer supported by the original developers and we are trying to keep the app alive (<a href="https://github.com/nylas-mail-lives/nylas-mail" target="_blank"> Github </a> ) </p>
+                    <h3> Free Code Camp Coursework Projects:</h3>
+                    <p>
+                        <ol>
+                            <li> Wikipedia Viewer </li>
+                            <li> Random Quote Generator </li>
+                            <li> Weather App </li>
+                            <li> Seconds Countdown </li>
+                        </ol>
+                    </p>
+                    <h3> Academic Projects: </h3>
+                    <ol>
+                        <li> Carotid Pulse Wave Velocity Sensor. Master's Project, IBTec, AUT. </li>
+                        <li> Infrared Vein Detector Device. Bachelor's Project, University of Mumbai. </li>
+                    </ol>
                 </div>
                 <div id="contact" style="display: none;">
 
                     <!-- The Skills Section -->
-                    <p>Contact me on:</p>
+                    <h3>Contact me on:</h3>
                     </b>
-                    <a href="https://github.com/mayurdw/" target="_blank">
-                        <div class="col-xs-3"><img src="https://cdn4.iconfinder.com/data/icons/iconsimple-logotypes/512/github-512.png" class="img-responsive img-circle" alt="Git"> </div>
-                        <a href="https://www.linkedin.com/in/mayurdwadhwani" target="_blank"></input>
-                            <div class="col-xs-3"><img src="https://cdn3.iconfinder.com/data/icons/free-social-icons/67/linkedin_circle_color-512.png" class="img-responsive img-circle" alt="LinkedIn"></a>
-                        </div>
-                        <a href="https://twitter.com/mayurwadhwanid" target="_blank">
-                            <div class="col-xs-3"><img src="https://cdn3.iconfinder.com/data/icons/picons-social/57/43-twitter-512.png" class="img-responsive img-circle" alt="Twitter"></a>
-                        </div>
-                        <a href="https://itsmayurremember.wordpress.com/" target="_blank">
-                            <div class="col-xs-3"><img src="https://cdn3.iconfinder.com/data/icons/flat-icons-web/40/WordPress-512.png" class="img-responsive img-circle" alt="Wordpress"></a>
-                        </div>
+                    <p> You can find the source code for this portfolio and all of my other projects on<a href="https://github.com/mayurdw/" target="_blank"> Github </a></p>
+                    <p>There is also my <a href="https://codepen.io/mayurdw" target="_blank"> Codepen</a> account and
+                        <a href="https://www.freecodecamp.org/mayurdw" target="_blank"> FreeCodeCamp</a> account </p>
+                    <p> For more information of my professional career, go to my <a href="https://www.linkedin.com/in/mayurdwadhwani" target="_blank">LinkedIn </a> profile </p>
+                    <p> If you wanna just chat, tweet at<a href="https://twitter.com/mayurwadhwanid" target="_blank"> me. </a></p>
+                    <p> Lastly, if you wanna read about my personal life/stories, go ahead and read my <a href="https://itsmayurremember.wordpress.com/" target="_blank"> blog.</a> </p>
+
                 </div>
 
             </div>
@@ -66,7 +92,8 @@
         </div>
     </div>
 
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js" type="text/javascript"></script>
+    <script src="main.js" type="text/javascript"></script>
 </body>
 
 </html>

@@ -1,3 +1,8 @@
+/*
+    Created By: Mayur D Wadhwani
+    License: MIT
+*/
+
 function AboutDisplay() {
     $("#aboutMe").show();
     $("#contact").hide();
