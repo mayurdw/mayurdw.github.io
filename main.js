@@ -3,6 +3,10 @@
     License: MIT
 */
 
+$(document).ready(function() {
+    $("#nav").load("navbar.html");
+});
+
 function AboutDisplay() {
     $("#aboutMe").show();
     $("#contact").hide();
