@@ -1,21 +1,41 @@
-var CLIENT_ID = 'f8zbrjgdn03q5ylbjicjoktfxilvqo';
-var TWITCH = 'https://api.twitch.tv/kraken/';
-var FCC = 'freecodecamp';
-
-//curl - H 'Accept: application/vnd.twitchtv.v5+json' - H 'Client-ID: f8zbrjgdn03q5ylbjicjoktfxilvqo' - X GET 'https://api.twitch.tv/kraken/users?login=freecodecamp'
-
-//'https://dev.twitch.tv/docs/v5/reference/streams/#get-stream-by-user'
 
 $(document).ready(function() {
     getStatus();
 })
 
 function getStatus(params) {
-    var FullLink = TWITCH + '?client_id=' + CLIENT_ID + 'users?login=' + FCC;
-
-    fetch(FullLink)
+    var szClient_id = 'f8zbrjgdn03q5ylbjicjoktfxilvqo';
+    var szTwitchEndpoint = 'https://api.twitch.tv/kraken/';
+    var szFCC = 'freecodecamp';
+    var szVersionHeader = 'application/vnd.twitchtv.v5+json';
+    var szFCCUrl = szTwitchEndpoint + 'users?login=' + szFCC;
+    var obMyHeaders = new Headers();
+    obMyHeaders.append('Client-ID', szClient_id);
+    obMyHeaders.append('Accept', szVersionHeader);
+    var obMyGet = { 
+        method: 'GET',
+        headers: obMyHeaders,
+        mode: 'cors',
+        cache: 'default' 
+    };
+    
+    fetch(szFCCUrl, obMyGet)
         .then(response => response.json())
-        .then(function(city) {
-            console.log(city);
+        .then(function(JSONResponse) {
+            szFCC = JSONResponse.users[0]._id;
+            var szStreamUrl = szTwitchEndpoint + 'streams/' +   szFCC + '?client_id=' + szClient_id;
+            fetch(szStreamUrl)
+            .then(response => response.json())
+            .then(function(stream){   
+                //console.log( stream.stream );
+                if ( stream.stream != null )
+                {
+                    $('#FCCStreaming').html("STREAMING!").css({'color':'green'});
+                }
+                else
+                {
+                    $('#FCCStreaming').html("OFFLINE!").css({'color':'red'});
+                }
+            })
         })
 };
